@@ -15,6 +15,14 @@
 		E31639B421B24DAF00542DE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E31639B221B24DAF00542DE9 /* LaunchScreen.storyboard */; };
 		E31639BF21B24DB000542DE9 /* StarWarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31639BE21B24DB000542DE9 /* StarWarsTests.swift */; };
 		E31639CA21B24DB000542DE9 /* StarWarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31639C921B24DB000542DE9 /* StarWarsUITests.swift */; };
+		E31639F021B24EAC00542DE9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E31639E321B24EA100542DE9 /* Alamofire.framework */; };
+		E31639F121B24EAC00542DE9 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E31639E321B24EA100542DE9 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E3163A0321B26E4C00542DE9 /* AboutCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3163A0221B26E4C00542DE9 /* AboutCharacterViewController.swift */; };
+		E3163A0521B26E7500542DE9 /* CharacterCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3163A0421B26E7500542DE9 /* CharacterCollectionViewController.swift */; };
+		E3163A0721B271AD00542DE9 /* Swapi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3163A0621B271AD00542DE9 /* Swapi.swift */; };
+		E3163A0A21B2722400542DE9 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3163A0921B2722400542DE9 /* UIImageViewExtension.swift */; };
+		E3163A0C21B275C500542DE9 /* StarWars.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3163A0B21B275C500542DE9 /* StarWars.swift */; };
+		E3163A0E21B275EA00542DE9 /* StarWarsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3163A0D21B275EA00542DE9 /* StarWarsResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +40,77 @@
 			remoteGlobalIDString = E31639A221B24DA300542DE9;
 			remoteInfo = StarWars;
 		};
+		E31639E221B24EA100542DE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E31639D721B24EA000542DE9 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		E31639E421B24EA100542DE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E31639D721B24EA000542DE9 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		E31639E621B24EA100542DE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E31639D721B24EA000542DE9 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		E31639E821B24EA100542DE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E31639D721B24EA000542DE9 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		E31639EA21B24EA100542DE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E31639D721B24EA000542DE9 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		E31639EC21B24EA100542DE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E31639D721B24EA000542DE9 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		E31639EE21B24EA100542DE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E31639D721B24EA000542DE9 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		E31639F221B24EAC00542DE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E31639D721B24EA000542DE9 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E31639F421B24EAC00542DE9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E31639F121B24EAC00542DE9 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E31639A321B24DA400542DE9 /* StarWars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWars.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +127,13 @@
 		E31639C521B24DB000542DE9 /* StarWarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarWarsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E31639C921B24DB000542DE9 /* StarWarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsUITests.swift; sourceTree = "<group>"; };
 		E31639CB21B24DB000542DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E31639D721B24EA000542DE9 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		E3163A0221B26E4C00542DE9 /* AboutCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCharacterViewController.swift; sourceTree = "<group>"; };
+		E3163A0421B26E7500542DE9 /* CharacterCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewController.swift; sourceTree = "<group>"; };
+		E3163A0621B271AD00542DE9 /* Swapi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swapi.swift; sourceTree = "<group>"; };
+		E3163A0921B2722400542DE9 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		E3163A0B21B275C500542DE9 /* StarWars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWars.swift; sourceTree = "<group>"; };
+		E3163A0D21B275EA00542DE9 /* StarWarsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E31639F021B24EAC00542DE9 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +165,7 @@
 		E316399A21B24DA300542DE9 = {
 			isa = PBXGroup;
 			children = (
+				E31639D721B24EA000542DE9 /* Alamofire.xcodeproj */,
 				E31639A521B24DA400542DE9 /* StarWars */,
 				E31639BD21B24DB000542DE9 /* StarWarsTests */,
 				E31639C821B24DB000542DE9 /* StarWarsUITests */,
@@ -99,13 +186,12 @@
 		E31639A521B24DA400542DE9 /* StarWars */ = {
 			isa = PBXGroup;
 			children = (
-				E31639A621B24DA400542DE9 /* AppDelegate.swift */,
-				E31639A821B24DA400542DE9 /* ViewController.swift */,
-				E31639AA21B24DA400542DE9 /* Main.storyboard */,
-				E31639B021B24DAF00542DE9 /* Assets.xcassets */,
-				E31639B221B24DAF00542DE9 /* LaunchScreen.storyboard */,
+				E3163A0121B26DCE00542DE9 /* Resource */,
+				E3163A0021B26DBD00542DE9 /* Network */,
+				E31639FF21B26DB100542DE9 /* ViewController */,
+				E31639FE21B26DA300542DE9 /* Model */,
+				E31639F621B26D9800542DE9 /* Main */,
 				E31639B521B24DAF00542DE9 /* Info.plist */,
-				E31639AD21B24DA400542DE9 /* StarWars.xcdatamodeld */,
 			);
 			path = StarWars;
 			sourceTree = "<group>";
@@ -128,6 +214,67 @@
 			path = StarWarsUITests;
 			sourceTree = "<group>";
 		};
+		E31639D821B24EA000542DE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E31639E321B24EA100542DE9 /* Alamofire.framework */,
+				E31639E521B24EA100542DE9 /* Alamofire iOS Tests.xctest */,
+				E31639E721B24EA100542DE9 /* Alamofire.framework */,
+				E31639E921B24EA100542DE9 /* Alamofire macOS Tests.xctest */,
+				E31639EB21B24EA100542DE9 /* Alamofire.framework */,
+				E31639ED21B24EA100542DE9 /* Alamofire tvOS Tests.xctest */,
+				E31639EF21B24EA100542DE9 /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E31639F621B26D9800542DE9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E31639A621B24DA400542DE9 /* AppDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E31639FE21B26DA300542DE9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E31639AD21B24DA400542DE9 /* StarWars.xcdatamodeld */,
+				E3163A0B21B275C500542DE9 /* StarWars.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E31639FF21B26DB100542DE9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E31639A821B24DA400542DE9 /* ViewController.swift */,
+				E3163A0221B26E4C00542DE9 /* AboutCharacterViewController.swift */,
+				E3163A0421B26E7500542DE9 /* CharacterCollectionViewController.swift */,
+				E3163A0921B2722400542DE9 /* UIImageViewExtension.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E3163A0021B26DBD00542DE9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E3163A0621B271AD00542DE9 /* Swapi.swift */,
+				E3163A0D21B275EA00542DE9 /* StarWarsResponse.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E3163A0121B26DCE00542DE9 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E31639AA21B24DA400542DE9 /* Main.storyboard */,
+				E31639B021B24DAF00542DE9 /* Assets.xcassets */,
+				E31639B221B24DAF00542DE9 /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,10 +285,12 @@
 				E316399F21B24DA300542DE9 /* Sources */,
 				E31639A021B24DA300542DE9 /* Frameworks */,
 				E31639A121B24DA300542DE9 /* Resources */,
+				E31639F421B24EAC00542DE9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E31639F321B24EAC00542DE9 /* PBXTargetDependency */,
 			);
 			name = StarWars;
 			productName = StarWars;
@@ -218,6 +367,12 @@
 			mainGroup = E316399A21B24DA300542DE9;
 			productRefGroup = E31639A421B24DA400542DE9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E31639D821B24EA000542DE9 /* Products */;
+					ProjectRef = E31639D721B24EA000542DE9 /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E31639A221B24DA300542DE9 /* StarWars */,
@@ -226,6 +381,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E31639E321B24EA100542DE9 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = E31639E221B24EA100542DE9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E31639E521B24EA100542DE9 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = E31639E421B24EA100542DE9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E31639E721B24EA100542DE9 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = E31639E621B24EA100542DE9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E31639E921B24EA100542DE9 /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = E31639E821B24EA100542DE9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E31639EB21B24EA100542DE9 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = E31639EA21B24EA100542DE9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E31639ED21B24EA100542DE9 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = E31639EC21B24EA100542DE9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E31639EF21B24EA100542DE9 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = E31639EE21B24EA100542DE9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E31639A121B24DA300542DE9 /* Resources */ = {
@@ -259,8 +466,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3163A0C21B275C500542DE9 /* StarWars.swift in Sources */,
+				E3163A0321B26E4C00542DE9 /* AboutCharacterViewController.swift in Sources */,
+				E3163A0A21B2722400542DE9 /* UIImageViewExtension.swift in Sources */,
 				E31639A921B24DA400542DE9 /* ViewController.swift in Sources */,
+				E3163A0521B26E7500542DE9 /* CharacterCollectionViewController.swift in Sources */,
 				E31639A721B24DA400542DE9 /* AppDelegate.swift in Sources */,
+				E3163A0721B271AD00542DE9 /* Swapi.swift in Sources */,
+				E3163A0E21B275EA00542DE9 /* StarWarsResponse.swift in Sources */,
 				E31639AF21B24DA400542DE9 /* StarWars.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +506,11 @@
 			isa = PBXTargetDependency;
 			target = E31639A221B24DA300542DE9 /* StarWars */;
 			targetProxy = E31639C621B24DB000542DE9 /* PBXContainerItemProxy */;
+		};
+		E31639F321B24EAC00542DE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = E31639F221B24EAC00542DE9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -435,9 +653,10 @@
 		E31639CF21B24DB000542DE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LBQKN3WJ4J;
+				DEVELOPMENT_TEAM = JWWBGU4FCR;
 				INFOPLIST_FILE = StarWars/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -453,9 +672,10 @@
 		E31639D021B24DB000542DE9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LBQKN3WJ4J;
+				DEVELOPMENT_TEAM = JWWBGU4FCR;
 				INFOPLIST_FILE = StarWars/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
